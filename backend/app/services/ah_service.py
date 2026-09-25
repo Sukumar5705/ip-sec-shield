@@ -16,7 +16,7 @@ EDUCATIONAL NOTE:
 """
 
 import json
-from app.utils.crypto import AH_KEY, compute_hmac, verify_hmac, truncate_hex
+from ..utils.crypto import AH_KEY, compute_hmac, verify_hmac, truncate_hex
 
 
 # ---------------------------------------------------------------------------

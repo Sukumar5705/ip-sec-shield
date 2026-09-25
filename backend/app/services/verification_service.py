@@ -6,7 +6,7 @@ and handles recovery for ESP.  Route handlers should call these functions
 rather than calling ah_service / esp_service directly.
 """
 
-from app.services import ah_service, esp_service
+from . import ah_service, esp_service
 
 
 # ---------------------------------------------------------------------------

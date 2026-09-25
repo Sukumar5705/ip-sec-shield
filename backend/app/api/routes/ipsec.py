@@ -13,14 +13,14 @@ Route handlers are intentionally thin — all business logic lives in services/.
 
 from fastapi import APIRouter, HTTPException, status
 
-from app.models.schemas import (
+from ...models.schemas import (
     ProtectRequest,
     ModifyRequest,
     VerifyRequest,
     RecoverRequest,
     HealthResponse,
 )
-from app.services import packet_service, attack_service, verification_service
+from ...services import packet_service, attack_service, verification_service
 
 router = APIRouter()
 

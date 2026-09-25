@@ -18,7 +18,7 @@ EDUCATIONAL NOTE:
 
 from cryptography.exceptions import InvalidTag
 
-from app.utils.crypto import (
+from ..utils.crypto import (
     ESP_KEY,
     aes_gcm_encrypt,
     aes_gcm_decrypt,

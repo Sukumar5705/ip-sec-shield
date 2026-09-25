@@ -5,9 +5,9 @@ Coordinates between AH / ESP services to produce protection responses
 and builds the structured objects returned by the /protect endpoint.
 """
 
-from app.utils.crypto import generate_packet_id
-from app.models.schemas import ProtectRequest
-from app.services import ah_service, esp_service
+from ..utils.crypto import generate_packet_id
+from ..models.schemas import ProtectRequest
+from . import ah_service, esp_service
 
 
 def build_protect_response(req: ProtectRequest) -> dict:
