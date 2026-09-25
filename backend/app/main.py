@@ -14,8 +14,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes.ipsec import router as ipsec_router
-
+from .api.routes.ipsec import router as ipsec_router
 # ---------------------------------------------------------------------------
 # Application factory
 # ---------------------------------------------------------------------------
